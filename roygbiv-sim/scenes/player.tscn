@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://srp5vlcy5y6r"]
+
+[ext_resource type="Script" uid="uid://d2r2rdllspyvu" path="res://scenes/player.gd" id="1_3vyb7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g2els"]
+load_path = "res://.godot/imported/playerTemp.png-855ab20b1b7027db9c877e7909b932a0.ctex"
+
+[node name="player" type="CharacterBody2D" unique_id=2007096110]
+script = ExtResource("1_3vyb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2044918790]
+texture = SubResource("CompressedTexture2D_g2els")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=813870730]
+visible = false
+polygon = PackedVector2Array(0, 0, 12, -1, 27, -17, 31, -13, 19, 2, 10, 5, -5, 4, -5, 10, 22, 28, 21, 32, -6, 16, -24, 32, -27, 29, -10, 12, -10, 3, -25, -3, -24, 6, -28, 9, -33, -4, -28, -9, -12, -3, -20, -12, -12, -29, 0, -29, 6, -16)
