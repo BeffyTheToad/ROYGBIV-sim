@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dsktnodyscpjn"]
+
+[ext_resource type="Script" uid="uid://bbxtwwqgw0qbj" path="res://scenes/sky.gd" id="1_3hy4n"]
+[ext_resource type="Texture2D" uid="uid://beeu5xsvlmehl" path="res://assets/bgSprite.png" id="1_qk45w"]
+[ext_resource type="PackedScene" uid="uid://cc6woq8xj2g35" path="res://scenes/ui.tscn" id="3_3hy4n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hy4n"]
+size = Vector2(20, 736)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uuonc"]
+size = Vector2(1314, 20)
+
+[node name="sky" type="Node2D" unique_id=16983852]
+script = ExtResource("1_3hy4n")
+
+[node name="skyBg" type="Sprite2D" parent="." unique_id=106972469]
+position = Vector2(640, 360)
+texture = ExtResource("1_qk45w")
+
+[node name="Clouds" type="Node2D" parent="." unique_id=1966533590]
+
+[node name="leftBorder" type="StaticBody2D" parent="." unique_id=881812083]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftBorder" unique_id=1963935978]
+position = Vector2(-10, 359)
+shape = SubResource("RectangleShape2D_3hy4n")
+
+[node name="rightBorder" type="StaticBody2D" parent="." unique_id=1621563881]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightBorder" unique_id=1859553571]
+position = Vector2(1290, 360)
+shape = SubResource("RectangleShape2D_3hy4n")
+
+[node name="bottomOfSky" type="Area2D" parent="." unique_id=37253393]
+position = Vector2(640, 720)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottomOfSky" unique_id=2042280335]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_uuonc")
+
+[node name="ui" parent="." unique_id=348185393 instance=ExtResource("3_3hy4n")]
+
+[connection signal="body_entered" from="bottomOfSky" to="." method="_on_bottom_of_sky_body_entered"]

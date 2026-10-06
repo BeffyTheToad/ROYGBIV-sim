@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dkq8dure340rm"]
+
+[ext_resource type="Script" uid="uid://b150s0rcj7nav" path="res://scenes/cloud.gd" id="1_vlwrh"]
+[ext_resource type="Texture2D" uid="uid://yj58j60mw0dp" path="res://cloud2-removebg-preview.png" id="2_2kyfr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ga5x8"]
+radius = 22.0
+height = 106.0
+
+[node name="Cloud" type="Area2D" unique_id=2095244272]
+collision_layer = 8
+script = ExtResource("1_vlwrh")
+
+[node name="cloudImage" type="Sprite2D" parent="." unique_id=741870309]
+texture = ExtResource("2_2kyfr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1719360665]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ga5x8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
