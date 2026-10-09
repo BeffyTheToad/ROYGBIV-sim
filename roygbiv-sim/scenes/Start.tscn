@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://dnn6xeqbr0jqj"]
+
+[ext_resource type="Script" uid="uid://cf754xydsjaky" path="res://scenes/start.gd" id="1_q7y7s"]
+[ext_resource type="Texture2D" uid="uid://bql0omx2tqbla" path="res://assets/Van1.png" id="1_yrm6t"]
+[ext_resource type="Texture2D" uid="uid://b2xibeossoffi" path="res://assets/R.png" id="2_q7y7s"]
+[ext_resource type="Texture2D" uid="uid://dhywgfetlw15k" path="res://assets/Y.png" id="3_nqh5h"]
+[ext_resource type="Texture2D" uid="uid://k3uwtyy48a41" path="res://assets/O.png" id="4_ea00n"]
+[ext_resource type="Texture2D" uid="uid://dc8da1hm63pes" path="res://assets/V.png" id="5_e66ye"]
+[ext_resource type="Texture2D" uid="uid://b1jklv1e8s2xr" path="res://assets/B.png" id="6_yud8w"]
+[ext_resource type="Texture2D" uid="uid://c7imb1w0or4v8" path="res://assets/G.png" id="7_ugrxo"]
+[ext_resource type="Texture2D" uid="uid://0awvikjmf6ky" path="res://assets/I.png" id="8_vwikb"]
+
+[node name="Control" type="Control" unique_id=630987047]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 119.0
+offset_top = 154.0
+offset_right = 119.0
+offset_bottom = 154.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q7y7s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1836491811]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1227095751]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.49411765, 0.78431374, 0.8901961, 1)
+metadata/_edit_lock_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=409577564]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/CenterContainer" unique_id=1492944306]
+position = Vector2(60, -80)
+scale = Vector2(10, 10)
+texture = ExtResource("1_yrm6t")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1257400392]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -277.0
+offset_top = -87.5
+offset_right = 277.0
+offset_bottom = 87.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=1059118087]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 128
+text = "RVOYBGI"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=1404064103]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "d  op   ans   n   our   rother's 
+  arage s  mulator"
+horizontal_alignment = 1
+
+[node name="Letters" type="Node2D" parent="CanvasLayer" unique_id=1616738957]
+
+[node name="R" type="Sprite2D" parent="CanvasLayer/Letters" unique_id=1333725683]
+position = Vector2(405, 423)
+scale = Vector2(1, 1.03125)
+texture = ExtResource("2_q7y7s")
+
+[node name="Y" type="Sprite2D" parent="CanvasLayer/Letters" unique_id=725813096]
+position = Vector2(642, 423)
+texture = ExtResource("3_nqh5h")
+
+[node name="O" type="Sprite2D" parent="CanvasLayer/Letters" unique_id=81729109]
+position = Vector2(586, 424)
+texture = ExtResource("4_ea00n")
+
+[node name="V" type="Sprite2D" parent="CanvasLayer/Letters" unique_id=1386840917]
+position = Vector2(486, 425)
+texture = ExtResource("5_e66ye")
+
+[node name="B" type="Sprite2D" parent="CanvasLayer/Letters" unique_id=621788417]
+position = Vector2(736, 424)
+texture = ExtResource("6_yud8w")
+
+[node name="G" type="Sprite2D" parent="CanvasLayer/Letters" unique_id=1042425199]
+position = Vector2(483, 482)
+texture = ExtResource("7_ugrxo")
+
+[node name="I" type="Sprite2D" parent="CanvasLayer/Letters" unique_id=1445195692]
+position = Vector2(641, 482)
+texture = ExtResource("8_vwikb")

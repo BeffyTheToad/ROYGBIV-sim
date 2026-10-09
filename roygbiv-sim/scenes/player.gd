@@ -12,7 +12,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
-	if not is_on_floor() and velocity.y <= 5000:
+	if not is_on_floor() and velocity.y <= 3000:
 		velocity += get_gravity() * delta
 
 	# Get the input direction and handle the movement/deceleration.

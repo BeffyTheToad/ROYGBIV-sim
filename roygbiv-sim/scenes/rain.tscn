@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bny0mjkb75h1"]
+
+[ext_resource type="Script" uid="uid://clnw8v0d7246w" path="res://scenes/rain.gd" id="1_5mvay"]
+[ext_resource type="Texture2D" uid="uid://1gvaip342jwv" path="res://assets/Raindrop.png" id="1_tchf5"]
+
+[node name="Rain" type="Node2D" unique_id=438699354]
+scale = Vector2(2, 2)
+script = ExtResource("1_5mvay")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1785230472]
+texture = ExtResource("1_tchf5")

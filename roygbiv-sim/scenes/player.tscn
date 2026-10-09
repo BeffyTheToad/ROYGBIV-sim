@@ -1,20 +1,21 @@
 [gd_scene format=3 uid="uid://srp5vlcy5y6r"]
 
 [ext_resource type="Script" uid="uid://d2r2rdllspyvu" path="res://scenes/player.gd" id="1_3vyb7"]
-[ext_resource type="Texture2D" uid="uid://lcdl1f7fu7b6" path="res://assets/vanTemp.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://bql0omx2tqbla" path="res://assets/Van1.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uuonc"]
-size = Vector2(100, 245)
+size = Vector2(16, 30)
 
 [node name="player" type="CharacterBody2D" unique_id=2007096110]
+scale = Vector2(3, 3)
 collision_mask = 14
 script = ExtResource("1_3vyb7")
 speed = 600.0
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2044918790]
-rotation = 1.5707964
+[node name="Player Image" type="Sprite2D" parent="." unique_id=2044918790]
+rotation = -1.5707964
 texture = ExtResource("2_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=750190404]
-position = Vector2(-14, 6.5)
+position = Vector2(2, 7)
 shape = SubResource("RectangleShape2D_uuonc")

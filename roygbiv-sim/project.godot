@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ROYGBIV Sim"
-run/main_scene="uid://dsktnodyscpjn"
+run/main_scene="uid://dnn6xeqbr0jqj"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -54,6 +54,7 @@ jump={
 2d_physics/layer_2="Borders"
 2d_physics/layer_3="Triggers"
 2d_physics/layer_4="Obstacles"
+2d_physics/layer_5="Cthulu"
 
 [physics]
 

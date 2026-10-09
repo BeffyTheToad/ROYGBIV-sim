@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bbxtwwqgw0qbj" path="res://scenes/sky.gd" id="1_3hy4n"]
 [ext_resource type="Texture2D" uid="uid://beeu5xsvlmehl" path="res://assets/bgSprite.png" id="1_qk45w"]
 [ext_resource type="PackedScene" uid="uid://cc6woq8xj2g35" path="res://scenes/ui.tscn" id="3_3hy4n"]
+[ext_resource type="Texture2D" uid="uid://bg6yerolqwd4n" path="res://assets/Garage Stage 0.png" id="3_v26od"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3hy4n"]
 size = Vector2(20, 736)
@@ -16,6 +17,12 @@ script = ExtResource("1_3hy4n")
 [node name="skyBg" type="Sprite2D" parent="." unique_id=106972469]
 position = Vector2(640, 360)
 texture = ExtResource("1_qk45w")
+
+[node name="GarageSprite" type="Sprite2D" parent="." unique_id=907840985]
+visible = false
+position = Vector2(620, 360)
+scale = Vector2(4.4140625, 4.4140625)
+texture = ExtResource("3_v26od")
 
 [node name="Clouds" type="Node2D" parent="." unique_id=1966533590]
 
